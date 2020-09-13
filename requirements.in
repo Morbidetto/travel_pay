@@ -1,0 +1,10 @@
+Django>=2.2,<3.0
+pytest
+pytest-django
+djangorestframework
+dj-database-url
+django-filter
+drf-yasg
+django-choices
+factory-boy
+mysqlclient
