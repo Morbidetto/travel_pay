@@ -1,5 +1,6 @@
 import factory
 from django.utils.timezone import get_current_timezone
+
 from money_api.enums import BalanceChangeType
 from money_api.models import Account
 from money_api.models import AccountHistory

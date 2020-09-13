@@ -1,18 +1,19 @@
 from django.utils.decorators import method_decorator
 from django_filters import rest_framework as filters
 from drf_yasg.utils import swagger_auto_schema
-from money_api.models import Account
-from money_api.models import AccountHistory
-from money_api.schemas import change_balance_post
-from money_api.serializers import AccountHistorySerializer
-from money_api.serializers import AccountSerializer
-from money_api.serializers import ChangeBalanceSerializer
 from rest_framework import status
 from rest_framework.filters import OrderingFilter
 from rest_framework.filters import SearchFilter
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.viewsets import ReadOnlyModelViewSet
+
+from money_api.models import Account
+from money_api.models import AccountHistory
+from money_api.schemas import change_balance_post
+from money_api.serializers import AccountHistorySerializer
+from money_api.serializers import AccountSerializer
+from money_api.serializers import ChangeBalanceSerializer
 
 
 class AccountViewSet(ReadOnlyModelViewSet):

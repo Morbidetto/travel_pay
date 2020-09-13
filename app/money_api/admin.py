@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from money_api.models import Account
 from money_api.models import AccountHistory
 

@@ -3,10 +3,11 @@ from django.urls import include
 from django.urls import path
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
+from rest_framework.routers import DefaultRouter
+
 from money_api.views import AccountHistoryViewSet
 from money_api.views import AccountViewSet
 from money_api.views import ChangeBalanceView
-from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register("accounts", AccountViewSet, basename="accounts")

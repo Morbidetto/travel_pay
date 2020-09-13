@@ -1,4 +1,5 @@
 from django.db import models
+
 from money_api.enums import BalanceChangeType
 
 

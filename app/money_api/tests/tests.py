@@ -1,12 +1,13 @@
 import pytest
 from django.urls import reverse
+from rest_framework import status
+from rest_framework.test import APIClient
+
 from money_api.enums import BalanceChangeType
 from money_api.models import Account
 from money_api.models import AccountHistory
 from money_api.tests.factories import AccountFactory
 from money_api.tests.factories import AccountHistoryFactory
-from rest_framework import status
-from rest_framework.test import APIClient
 
 
 @pytest.mark.django_db
