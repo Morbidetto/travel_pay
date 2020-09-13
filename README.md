@@ -18,3 +18,4 @@ Application is dockerized but can also be run locally. Firstly copy env_example 
 * App would benefit from frontend application which would handle REST communication. 
 * Account model is seperated from Django User model and there's no authentication and authorisation. 
 * Everyone can access all endpoints and they should be restricted to special user type.
+* Production docker-compose should be created which would use uWSGI and nginx instead of Django server
