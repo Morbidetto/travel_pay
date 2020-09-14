@@ -2,4 +2,4 @@ DATABASE_URLA=mysql://root:secret@127.0.0.1:3306/database
 MYSQL_DATABASE=database
 MYSQL_ROOT_PASSWORD=secret
 SECRET_KEY=SECRET_KEY
-DEBUG=False
+DEBUG=True
